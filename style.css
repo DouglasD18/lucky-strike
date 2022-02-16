@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root {
+--mustard: #fbd743ff;
+--red-ryb: #ff1f1fff;
+--blue-jeans: #5cb9ffff;
+--dark-slate-blue: #363a81ff;
+--platinum: #e7e7e7ff;
+}
+
+body {
+  background-color: var(--platinum);
+  margin: 0;
+  width: 100%;
+}
+
+.header-img {
+  width: 400px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-slate-blue);
+  color: var(--platinum);
+}
+
+#time-name {
+  padding: 12px 20px;
+  margin-top: 5px;
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+#type {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 220px;
+}
+
+#aside {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: space-around;
+  width: 350px;
+  margin-left: 150px;
+  font-size: 25px;
+  font-family: 'Luxurious Roman', cursive;
+}
+
+aside label {
+  font-size: 18px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#team-data {
+  border: 10px solid var(--mustard);
+  border-radius: 10px;
+  color: var(--dark-slate-blue);
+  font-weight: bolder;
+  width: 250px;
+  height: 230px;
+  font-size: 14px;
+  padding: 10px;
+  background-color: var(--mustard);
+  perspective: 1000px;
+  background-color: dodgerblue;
+}
+
+.image-types {
+  width: 100px;
+  height: 70px;
+}
+
+#ul-title {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+
+.team-data-back {
+  color: white;
+  border-radius: 10px;
+}
+
+#all-team {
+  padding-left: 30px;
+}
+
+.card-pokemon {
+  width: 150px;
+  height: 200px;
+  margin-right: 40px;
+  background-color: var(--mustard);
+  transition: 500ms;
+  border: 4px outset #000000ed;
+  border-radius: 5px;
+}
+
+.card-pokemon:hover {
+  box-shadow: 5px 5px 15px -1px rgba(197, 197, 197, 0.46);
+  width: 160px;
+  height: 210px;
+  cursor: pointer;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poke-name{
+  display: none;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  background-color: var(--dark-slate-blue);
+  color: var(--mustard);
+  text-transform: capitalize;
+}
+
+.question {
+  width: 130px;
+  transition: 500ms;
+  padding-top: 25px;
+}
+
+.question:hover {
+  width: 160px;
+}
+
+#time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 200px;
+}
+
+#name-team {
+  align-self: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+}
+
+.poke-list {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-height: 350px;
+}
+
+.list-item {
+  color: black;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-img {
+  width: 450px;
+}
+
+.btns {
+  display: flex;
+}
+
+.buttons {
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  border: none;
+  background-color: var(--mustard);
+  color: var(--dark-slate-blue);
+  transition: 500ms;
+  font-weight: bolder;
+  font-size: 14px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin: 5px;
+  justify-content: center;
+}
+
+.buttons:hover {
+  border: 1px solid var(--platinum);
+  background-color: var(--platinum);
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  display: flex;
+  background-color: var(--platinum);
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 35%; 
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-modal {
+  align-self: flex-start;
+  margin-top: 40px;
+}
+
+#question-modal {
+  color: black;
+  font-size: 13.5px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+  align-self: flex-start;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.poke-image {
+  height: 80px;
+}

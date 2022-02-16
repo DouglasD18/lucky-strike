@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky Strike</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./assets/Pokeball_icon-icons.com_67448.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <center>
+      <img class="header-img" src="assets/Lucky-Strike.png" alt="Logo e lema do site">
+    </center>
+  </header>
+  
+  <main>
+    <aside id="aside">
+      <label>Nome do Time:
+        <input id='time-name' type="text" placeholder="Digite aqui">
+      </label>
+
+      <!-- Team Data -->
+      <div id="team-data">
+          <div class="team-data-back">
+            <h4 id="ul-title">Seus Pokémons são dos tipos:</h4>
+            <ul id="type">
+            </ul>
+          </div>
+      </div>
+
+      <!-- Botões -->
+      <div class="btns">
+        <button class="buttons" id="btn-save">Salvar time</button>
+        <button class="buttons" id="btn-clear">Limpar Time</button>
+        <button class="buttons" id="btn-random">Time aletório</button>
+      </div>
+    </aside>
+
+    <section id="time">
+      <h2 id="name-team">Nome do Time</h2>
+
+      <!-- Cards do Pokemon -->
+      <div id="all-team">
+          <div id="top" class="row">
+            <div id="card1" class="card-pokemon">
+            <div class="image">
+              <h4 class="poke-name"></h4>
+              <img class="question" src="assets/pokemonquestion.png">
+            </div>
+            <div class="info"></div>           
+          </div>
+          <div id="card2" class="card-pokemon">
+            <div class="image">
+              <h4 class="poke-name"></h4>
+              <img class="question" src="assets/pokemonquestion.png">
+            </div>
+            <div class="info"></div>
+          </div>
+          <div id="card3" class="card-pokemon">
+            <div class="image">
+              <h4 class="poke-name"></h4>
+              <img class="question" src="assets/pokemonquestion.png">
+            </div>
+            <div class="info"></div>
+          </div>
+        </div>
+        <div id="bottom" class="row">
+          <div id="card4" class="card-pokemon">
+            <div class="image">
+              <h4 class="poke-name"></h4>
+              <img class="question" src="assets/pokemonquestion.png">
+            </div>
+            <div class="info"></div>
+          </div>
+          <div id="card5" class="card-pokemon">
+            <div class="image">
+              <h4 class="poke-name"></h4>
+              <img class="question" src="assets/pokemonquestion.png">
+            </div>
+            <div class="info"></div>
+          </div>
+          <div id="card6" class="card-pokemon">
+            <div class="image">
+              <h4 class="poke-name"></h4>
+              <img class="question" src="assets/pokemonquestion.png">
+            </div>
+            <div class="info"></div>
+          </div>
+      </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="input-area">
+              <input class="input-modal" type="text" placeholder="Qual Pokemon você quer?">
+              <img id="input-img" class="hidden">
+              <p id="question-modal" class="hidden"></p>
+              <button id="btn-yes" class="hidden">Sim</button>
+              <button id="btn-no" class="hidden">Não</button>
+        </div>
+        <ul class="poke-list">
+        </ul>
+        </div>       
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img class="footer-img" src="assets/footerimg.png">
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
